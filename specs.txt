@@ -1,0 +1,7 @@
+what are the degrees at 12:00   0
+what are the degrees at 1:00	30
+what are the degrees at 2:00	60
+what are the degrees at 3:00	90	
+what are the degrees at 4:00	120
+what are the degrees at 5:00	150
+what are the degrees at 6:00	180
