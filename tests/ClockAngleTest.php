@@ -163,6 +163,46 @@
 
             $this->assertEquals("175 Degrees", $result);
         }
+
+        function test_clockAngle859()
+        {
+            $test_ClockAngleTest = new ClockAngle;
+            $input = "8:59";
+
+            $result = $test_ClockAngleTest->angleBetweenClockHands($input);
+
+            $this->assertEquals("84.5 Degrees", $result);
+        }
+
+        function test_clockAngle959()
+        {
+            $test_ClockAngleTest = new ClockAngle;
+            $input = "9:59";
+
+            $result = $test_ClockAngleTest->angleBetweenClockHands($input);
+
+            $this->assertEquals("54.5 Degrees", $result);
+        }
+
+        function test_clockAngle1059()
+        {
+            $test_ClockAngleTest = new ClockAngle;
+            $input = "10:59";
+
+            $result = $test_ClockAngleTest->angleBetweenClockHands($input);
+
+            $this->assertEquals("24.5 Degrees", $result);
+        }
+
+        function test_clockAngle1159()
+        {
+            $test_ClockAngleTest = new ClockAngle;
+            $input = "11:59";
+
+            $result = $test_ClockAngleTest->angleBetweenClockHands($input);
+
+            $this->assertEquals("5.5 Degrees", $result);
+        }
     }
 
  ?>
