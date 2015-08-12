@@ -4,7 +4,7 @@
 
     class ClockAngleTest extends PHPUnit_Framework_TestCase
     {
-        /*function test_clockAngle12()
+        function test_clockAngle12()
         {
             $test_ClockAngleTest = new ClockAngle;
             $input = 12;
@@ -122,7 +122,7 @@
             $result = $test_ClockAngleTest->angleBetweenClockHands($input);
 
             $this->assertEquals("30 Degrees", $result);
-        } */
+        }
 
         function test_clockAngle130()
         {
@@ -142,6 +142,26 @@
             $result = $test_ClockAngleTest->angleBetweenClockHands($input);
 
             $this->assertEquals("7.5 Degrees", $result);
+        }
+
+        function test_clockAngle320()
+        {
+            $test_ClockAngleTest = new ClockAngle;
+            $input = "3:20";
+
+            $result = $test_ClockAngleTest->angleBetweenClockHands($input);
+
+            $this->assertEquals("20 Degrees", $result);
+        }
+
+        function test_clockAngle350()
+        {
+            $test_ClockAngleTest = new ClockAngle;
+            $input = "3:50";
+
+            $result = $test_ClockAngleTest->angleBetweenClockHands($input);
+
+            $this->assertEquals("175 Degrees", $result);
         }
     }
 
