@@ -194,6 +194,16 @@
             $this->assertEquals("24.5 Degrees", $result);
         }
 
+        function test_clockAngle1130()
+        {
+            $test_ClockAngleTest = new ClockAngle;
+            $input = "11:30";
+
+            $result = $test_ClockAngleTest->angleBetweenClockHands($input);
+
+            $this->assertEquals("165 Degrees", $result);
+        }
+
         function test_clockAngle1159()
         {
             $test_ClockAngleTest = new ClockAngle;
@@ -202,6 +212,16 @@
             $result = $test_ClockAngleTest->angleBetweenClockHands($input);
 
             $this->assertEquals("5.5 Degrees", $result);
+        }
+
+        function test_clockAngle101()
+        {
+            $test_ClockAngleTest = new ClockAngle;
+            $input = "1:01";
+
+            $result = $test_ClockAngleTest->angleBetweenClockHands($input);
+
+            $this->assertEquals("24.5 Degrees", $result);
         }
     }
 
